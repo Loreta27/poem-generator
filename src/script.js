@@ -1,6 +1,8 @@
 function generatePoem(event) {
     event.preventDefault();
 
+    document.querySelector("#poem").innerHTML = "";
+
     new Typewriter("#poem", {
     strings: " They smell really nice ",
     autoStart: true,
