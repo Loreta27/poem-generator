@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel = "stylesheet" href="src/style.css"/>
     <title>AI Poem Generator</title>
 </head>
@@ -13,7 +14,7 @@
 </header>
 
 <main>
-    <form>
+    <form id=" poem-generator-form">
         <input type="text" placeholder ="Enter the topic of the poem" 
         autofocus required
         autocomplete="off"
@@ -22,11 +23,7 @@
         <input type="Submit" class="submit-button"/>
 
     </form>
-    <div class="poem">
-        I met a traveller from an antique land,
-        <br/>
-        Who said—“Two vast and trunkless legs of stone
-    </div>
+    <div class="poem" id="poem"> </div>
 </main>
     <footer>
         This AI Project was coded by <a
@@ -40,6 +37,6 @@
     and is<a href="https://ai-noni-poem-generator.netlify.app/" target="_blank"> hosted on Netlify </a>
     </footer>
 </div>
-    <script src ="src/index.js"></script>
+    <script src ="src/script.js"></script>
 </body>
 </html>
